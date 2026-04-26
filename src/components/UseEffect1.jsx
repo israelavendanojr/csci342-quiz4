@@ -1,11 +1,11 @@
-import React, { useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 
-function ExampleHooks() {
-    
+function UseEffect1() {
+
     const [count, setCount] = useState(0);
 
     useEffect(() => {
-        console.log('Count is changed: ${count}');
+        console.log(`Count is changed: ${count}`);
     }, [count])
 
     const handleClick = () => {
@@ -19,3 +19,5 @@ function ExampleHooks() {
         </div>
     )
 }
+
+export default UseEffect1

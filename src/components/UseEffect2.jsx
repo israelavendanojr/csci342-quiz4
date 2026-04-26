@@ -1,7 +1,7 @@
-import React, { useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 
-function ExampleHooks() {
-    
+function UseEffect2() {
+
     const [posts, setPost] = useState([]);
 
     useEffect(() => {
@@ -10,7 +10,7 @@ function ExampleHooks() {
         .then((data) => setPost(data))
     }, []) // [] is event that it listens to, if null only fetches once, else listens to that variable that is inserted
 
-    
+
 
     return (
         <div>
@@ -22,8 +22,8 @@ function ExampleHooks() {
             </div>
         ))}
         </div>
-        
+
     )
 }
 
-export default ExampleHooks
+export default UseEffect2

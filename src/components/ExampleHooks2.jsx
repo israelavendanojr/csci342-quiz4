@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-function ExampleHooks() {
-    
+function ExampleHooks2() {
+
     const [count, setCount] = useState(0);
     const handleClick = () => {
         setCount(prevCount => prevCount + 1)
@@ -14,3 +14,5 @@ function ExampleHooks() {
         </div>
     )
 }
+
+export default ExampleHooks2

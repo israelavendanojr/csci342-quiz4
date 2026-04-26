@@ -1,12 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-function ExampleHooks() {
-    const [name, setName] = useState("John")
-    
+function ExampleHooks1() {
+    const [name, setName] = useState("Israel")
+
     const handleClick = () => {
-        let name = "John";
         console.log("Hello", name)
-        setName("Mary")
+        setName("Junior")
     }
 
     return (
@@ -16,3 +15,5 @@ function ExampleHooks() {
         </div>
     )
 }
+
+export default ExampleHooks1
